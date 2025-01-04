@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <title>아리히토미</title>
+    <meta charset="UTF-8">
+    <style>
+        h1{
+            text-align:center;
+            color:powderblue;
+            border-bottom: 3px black solid;
+            padding-bottom: 10px;
+            font-size: 100px;
+        }
+
+        ol{
+            margin-left: 30px;
+        }
+        
+    </style>
+    <script>
+        function ahri(self){
+            if (self.value=='NIGHT'){
+                document.querySelector('body').style.backgroundColor='black';
+                document.querySelector('h1').style.borderBottom='white 3px solid' ;
+                var a = document.querySelectorAll('li');
+                a[2].style.color='red';
+                self.value = 'DAY';
+            }
+            else{
+                self.value = 'NIGHT';
+                document.querySelector('body').style.backgroundColor='white';
+                document.querySelector('h1').style.borderBottom='black 3px solid';
+                var a = document.querySelectorAll('li');
+                a[2].style.color='black';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 >아리의 히토미</h1>
+    <img src="ahri.2025.jpg" width="100%">
+    <input type="button" value="히토미 100%접속" onclick="
+        location.href='https://youtube.com'
+    ">
+    <input type="button" value="NIGHT" onclick="ahri(this)">
+    <ol>
+        <li style="color: salmon; font-size: 303%;">**!쿠키런을 플레이스토어에서 다운받는다!**</li>
+        <li style="color: blue; font-size: 300%;">!!쿠키런을 실행한다!!</li>
+        <li style="font-size: 300%;">!!히토미에 접속한다.</li>
+    </ol>
+</body>
+</html>
